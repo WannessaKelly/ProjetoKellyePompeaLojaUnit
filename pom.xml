@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.5.RELEASE</version>
+		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>LojaUnitKellyePompea</artifactId>
+	<artifactId>ProjetoKellyLojaUnit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>LojaUnitKellyePompea</name>
+	<name>ProjetoKellyLojaUnit</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,6 +19,15 @@
 	</properties>
 
 	<dependencies>
+	<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
